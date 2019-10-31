@@ -1,0 +1,29 @@
+{
+  "name": "lodown-benlmeyers",
+  "version": "1.0.0",
+  "description": "my first npm library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- test/ -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlmeyers/lodown.git"
+  },
+  "author": "Ben Meyers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benlmeyers/lodown/issues"
+  },
+  "homepage": "https://github.com/benlmeyers/lodown#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "i": "^0.3.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0"
+  }
+}
