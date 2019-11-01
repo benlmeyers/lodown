@@ -389,9 +389,9 @@ function reduce(array, test, seed){
        seedDefined = 1;
    }
    for (let i = seedDefined; i < array.length; i++){
-       seed = test(seed, array[i], i);
+       seed = test(seed, array[i], i, array);
    }   return seed;
-}  
+}; 
  
 module.exports.reduce = reduce;   
 /**
