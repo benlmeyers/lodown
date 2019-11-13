@@ -38,10 +38,11 @@ module.exports.identity = identity;
 /**
  * typeOf: Uses if-else statements to return the type of any value as a string. 
  * 
- * @param {string} one of "string", "array", "object", undefined", "number", 
- * "boolean", "null", "function": the value which we want to obtain and return
- * as a string.
- * @return {value} a string of the type of value we want to return
+ * @param {value} can be a string, array, object, number, function, or anything.
+ * The function will tell us, which type it is.
+ * @return {string} one of "string", "array", "object", undefined", "number", 
+ * "boolean", "null", "function". The value of our parameter, written as a string.
+ * 
  */
 function typeOf(value) {
     if (Array.isArray(value) === true) {
