@@ -38,7 +38,7 @@ module.exports.identity = identity;
 /**
  * typeOf: Uses if-else statements to return the type of any value as a string. 
  * 
- * @param {value} one of "string", "array", "object", undefined", "number", 
+ * @param {string} one of "string", "array", "object", undefined", "number", 
  * "boolean", "null", "function": the value which we want to obtain and return
  * as a string.
  * @return {value} a string of the type of value we want to return
@@ -64,8 +64,8 @@ module.exports.typeOf = typeOf;
  * will return an empty array.  If the number is greater than the array, the function
  * will return the entire array. 
  * 
- * @params {array, number} array: to be examined to find the values to be returned.
- * number: the number of values to return starting from the beginning of the array.
+ * @param {array} array: to be examined to find the values to be returned.
+ * @param {number} number: the number of values to return starting from the beginning of the array.
  * @return {array} array: a new array of values from the original array.
  */
 function first(array, number) {
@@ -89,8 +89,8 @@ module.exports.first = first;
  * will return an empty array.  If the number is greater than the array, the function
  * will return the entire array.
  * 
- * @params {array, number} array: to be examined to find the values to be returned.
- * number: the number of values to return starting from the end of the array.
+ * @param {array} array: to be examined to find the values to be returned.
+ * @param {number} number: the number of values to return starting from the end of the array.
  * @return {array} array: a new array of values from the original array.
  */
 function last(array, number) {
@@ -381,9 +381,9 @@ module.exports.some = some;
  * the function to reduce the total number of values in the array.
  * @param {function} function: accepts the values from the array, and somehow combines 
  * them into a bigger number, so it ends with only one value. 
- * @param {seed} seed: the starting value for the function to work with. If it is 
+ * @param {value} seed: the starting value for the function to work with. If it is 
  * undefined, it will be reset to array[0].
- * @return {seed} seed: will be returned with all of the other values from the array 
+ * @return {value} will be returned with all of the other values from the array 
  * combined into it. It will be the same datatype that the seed is set as, usually a number.
  */
 function reduce(array, test, seed) {
